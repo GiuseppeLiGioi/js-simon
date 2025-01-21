@@ -67,7 +67,7 @@ bottone.addEventListener('click', function (event) {
 
     //FASE DI OUTPUT
     if (numeriCorretti.length > 0) {
-        messaggio.innerHTML = `Hai indovinato ${numeriCorretti.length} numeri. Eccoli: ${numeriCorretti.join(', ')}`;
+        messaggio.innerHTML = `Hai indovinato ${numeriCorretti.length} numeri, eccoli: ${numeriCorretti.join(', ')}`;
     } else {
         messaggio.innerHTML = "Non hai indovinato nessun numero."; 
     }
