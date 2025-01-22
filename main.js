@@ -8,7 +8,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
 let Numeri = [];
 let numeriHtml = document.getElementById('numbers-list');
-let divHtml = document.getElementById('instructions');
+let divHtml = document.getElementById('countdown');
 let counter = 30; // Timer di 30 secondi
 
 // adesso mi creo i 5 numeri casuali 
