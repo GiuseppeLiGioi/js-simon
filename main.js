@@ -12,11 +12,14 @@ let divHtml = document.getElementById('instructions');
 let counter = 30; // Timer di 30 secondi
 
 // adesso mi creo i 5 numeri casuali 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; Numeri.length < 5; i++) {
     let numeroCasuale = Math.floor(Math.random() * (50 - 1)) + 1;
+    if(!(Numeri.includes(numeroCasuale))){
     Numeri.push(numeroCasuale);
+    }
+    
 }
-numeriHtml.innerHTML = `I numeri da memorizzare sono: ${Numeri.join(', ')}`;
+numeriHtml.innerHTML = `${Numeri.join(', ')}`;
 
 
 const ContoAllaRovescia = setInterval(function () {
